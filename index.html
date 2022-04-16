@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <div class="form-validation position-absolute">
+        <div id="error"></div>
+        <div class="form d-flex justify-content-between">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your Name">
+        </div>
+        <div class="form d-flex justify-content-between">
+            <label for="surName">Surname</label>
+            <input id="surName" type="text" placeholder="Enter your Surname">
+        </div>
+        <div class="form d-flex justify-content-between">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Enter your email">
+        </div>
+        <div class="form d-flex justify-content-between">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter your password">
+        </div>
+        <div class="form d-flex justify-content-between">
+            <label for="rePassword">RePassword</label>
+            <input id="rePassword" type="password" placeholder="Enter again your password">
+        </div>
+        <button type="submit" id="btn">SUBMIT</button>
+
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
