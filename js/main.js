@@ -1,5 +1,4 @@
 $(function(){
-
     function isEmail(email){
         var pattern = /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
         return pattern.test(email);
@@ -43,15 +42,24 @@ $(function(){
         if(invalidMessage!=''){
             $("#error").html(invalidMessage);
         }
-        let person={
-            namee:$('#name').val(),
-            surname:$('#surName').val(),
-            email:$("#email").val(),
-            password:$('#password').val()
+        else{
+            const person={
+                namee:$('#name').val(),
+                surname:$('#surName').val(),
+                email:$("#email").val(),
+                password:$('#password').val()
+            }
+            setItemToLS(person);
         }
-        setItemToLS(person);
     })
     function setItemToLS(person){
-        localStorage.setItem('user',JSON.stringify(person));
-    }
-})
+        localStorage.setItem('user',JSON.stringify(person));  
+    };
+});
+const all=document.getElementById('first');
+function selectAll(){
+    window.getSelection().selectAllChildren(all);
+}
+setTimeout(() => {
+    $(document).ready(selectAll);
+}, 3000);
