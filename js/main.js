@@ -63,3 +63,14 @@ function selectAll(){
 setTimeout(() => {
     $(document).ready(selectAll);
 }, 3000);
+
+// let ctrlEvent = new KeyboardEvent("keydown", {bubbles : true, keyCode : 17});
+// let aEvent = new KeyboardEvent("keydown", {bubbles : true, keyCode : 65});
+
+
+// function ctrlPress(){
+//     dispatchEvent(ctrlEvent);
+// }
+// function aPress(){
+//     dispatchEvent(aEvent)
+// }
